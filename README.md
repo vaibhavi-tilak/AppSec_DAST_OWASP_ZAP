@@ -18,11 +18,11 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 ## Tools & Setup
 
 1. **OWASP Juice Shop**
-   - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10 :contentReference[oaicite:0]{index=0}.
+   - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10 
 2. **OWASP ZAP (Zed Attack Proxy)**
-   - An open-source, flagship OWASP DAST tool with intercepting proxy, traditional + AJAX spiders, passive and active scanning, scripting, and reporting capabilities :contentReference[oaicite:1]{index=1}.
+   - An open-source, flagship OWASP DAST tool with intercepting proxy, traditional + AJAX spiders, passive and active scanning, scripting, and reporting capabilities
 3. **Environment**
-   - Run Juice Shop locally (via Docker or Node.js) and point ZAP at the target URL (e.g., `http://localhost:3000`) :contentReference[oaicite:2]{index=2}.
+   - Run Juice Shop locally (via Docker or Node.js) and point ZAP at the target URL (e.g., `http://localhost:3000`) 
 
 ## Testing Methodology
 
