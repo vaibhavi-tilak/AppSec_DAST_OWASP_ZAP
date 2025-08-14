@@ -1,5 +1,5 @@
 
-### Installation Juice Shop
+# Installation Juice Shop
 
 #### **From Source**
 1. Install [Node.js](https://nodejs.org/)
@@ -53,15 +53,15 @@ docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 
 # Installation OWASP ZAP 
 
-### Pull the OWASP ZAP image
+### **Pull the OWASP ZAP image**
 ```
 docker pull zaproxy/zap-stable:latest
 ```
-### Run OWASP ZAP
+### **Run OWASP ZAP**
 ```
 docker run --rm -it zaproxy/zap-stable:latest
 ```
-### Run 
+### **Run following command** 
 ```
 docker run -u zap -p 8080:8080 -p 8090:8090 -i ghcr.io/zaproxy/zaproxy:stable zap-webswing.sh
 ```
