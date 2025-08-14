@@ -28,10 +28,10 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
           -6.	Browse to http://localhost:3000
 
     Docker Container- 
-          1.	Install Docker
-          2.	docker pull bkimminich/juice-shop
-          3.	docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
-          4.	Browse to http://localhost:3000 (on macOS and Windows browse to http://192.168.99.100:3000 if you are using docker-machine instead of the native docker installation)
+          -1.	Install Docker
+          -2.	docker pull bkimminich/juice-shop
+          -3.	docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+          -4.	Browse to http://localhost:3000 (on macOS and Windows browse to http://192.168.99.100:3000 if you are using docker-machine instead of the native docker installation)
    
 3. **OWASP ZAP (Zed Attack Proxy)**
    - An open-source, flagship OWASP DAST tool with intercepting proxy, traditional + AJAX spiders, passive and active scanning, scripting, and reporting capabilities
@@ -46,13 +46,13 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
   
 Navigate to:  ```Tools--> Spider```
 
-  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/2.1%20Spider.png)
+  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/2.1%20Spider.png)
 
 - **AJAX Spider**: Handles JavaScript-heavy or single-page applications by discovering dynamically loaded content via AJAX calls.
   
 Navigate to: ```Tools--> AJAX Spider```
 
-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/2.%20AJAX%20Spider.png)
+![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/2.%20AJAX%20Spider.png)
 
 ### 2. Scanning
 - **Passive Scanning**  
@@ -60,7 +60,7 @@ Navigate to: ```Tools--> AJAX Spider```
   - Identifies issues like missing headers, information leakage, etc.
   
   Navigate to: ```Manual Explore```
-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/4.1%20Passive%20Scan%20Rules.png)
+![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/4.1%20Passive%20Scan%20Rules.png)
   
 - **Active Scanning**  
   - Sends crafted malicious requests to identify deeper vulnerabilities.
@@ -68,7 +68,7 @@ Navigate to: ```Tools--> AJAX Spider```
     
     Navigate to: ```Automate Explore```
     
-    ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/4.1%20Passive%20Scan%20Rules.png)
+    ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/6.1%20Active%20Scan%20-%20Automated%20Scan.png)
 
 ## 3. Vulnerabilities Tested
 
@@ -209,29 +209,10 @@ CSRF can be prevented by implementing:
   - `zap_scan.xml`, etc.
 - Provide links in the README or link to your hosted reports.
 
-## Tools & Setup
+- ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
 
-1. **OWASP Juice Shop**
-   - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10
-  
-Form Sources- 
-1.	Install node.js
-2.	Run git clone https://github.com/juice-shop/juice-shop.git --depth 1 (or clone your own fork of the repository)
-3.	Go into the cloned folder with cd juice-shop
-4.	Run npm install (only has to be done before first start or when you change the source code)
-5.	Run npm start
-6.	Browse to http://localhost:3000
-
-Docker Container- 
-1.	Install Docker
-2.	docker pull bkimminich/juice-shop
-3.	docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
-4.	Browse to http://localhost:3000 (on macOS and Windows browse to http://192.168.99.100:3000 if you are using docker-machine instead of the native docker installation)
-
-3. **OWASP ZAP (Zed Attack Proxy)**
-   - An open-source, flagship OWASP DAST tool with intercepting proxy, traditional + AJAX spiders, passive and active scanning, scripting, and reporting capabilities
-4. **Environment**
-   - Run Juice Shop locally (via Docker or Node.js) and point ZAP at the target URL (e.g., `http://localhost:3000`) 
+-The PDF File
+![image_alt]()https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png
 
 
 
