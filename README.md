@@ -87,19 +87,12 @@ Navigate to: ```Tools--> AJAX Spider```
 
     ![imagage_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/7.2%20Scan%20Policy.png)
 
-## 3. Vulnerabilities Tested
+## 3. Additional Manual Vulnerabilities Tested
 
-### 3a. SQL Injection (SQLi)
-- Attempt to inject SQL statements into input fields.
-- Review ZAP findings for database error messages or abnormal behaviors.
+In this project, we conducted comprehensive security testing to identify various vulnerabilities within the application. Each identified vulnerability has been carefully mapped to the corresponding OWASP Top 10 category. For every vulnerability, we have detailed the technical cause explaining how the issue arises, classified it under the appropriate category, and outlined mitigation strategies based on the official OWASP guidelines. This structured approach ensures a clear understanding of the risks and provides actionable recommendations to enhance the application's security posture effectively.
 
-### 3b. Cross-Site Scripting (XSS)
-- **Reflected XSS**: Payloads sent in URLs and reflected in HTTP responses.
-- **Stored XSS**: Payload stored on the server and displayed to other users.
-- **DOM-based XSS**: Payload executed entirely within the browser via JavaScript DOM manipulation.
+https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Juice%20Shop%20Vulnerabilities.xlsx
 
-### 3c. Authentication Bypass
-- Test login and session management for weaknesses allowing unauthorized access.
 
 ### 3d. Broken Access Control
 **Definition:**  
@@ -209,22 +202,18 @@ CSRF can be prevented by implementing:
 
 
 
-### 3f. Denial of Service (DoS)
-- Identify endpoints susceptible to resource exhaustion.
-- 
 
-## 4. Automated Scanning & Report Generation
-- Use ZAP’s CLI or API to automate spidering + active scanning in a single script.
-- Schedule scans or integrate into CI/CD pipelines.
-- Example steps:
-1. Forward Selenium browser traffic through ZAP proxy.
-2. After Selenium tests complete, call:
+## 4. Reports
+- In the ZAP main menu, go to Report → Generate Report… or click the "Generate Report" toolbar button.
 
-## 5. Reports
-- Generate and export in formats like `.html`, `.xml`, `.json`, `.har`:
-  - `zap_scan.html`
-  - `zap_scan.xml`, etc.
-- Provide links in the README or link to your hosted reports.
+- In the Generate Report dialog, configure the report options: Enter a title for the report.
+
+- Choose the filename and directory for saving the report.
+- Optionally, select specific contexts or sites to include in the report.
+- Choose a template for the report format such as HTML, MD, PDF, JSON, or XML.
+- Use filters to include alerts based on risk level and confidence.
+- Optionally include or exclude sections of the report depending on the template.
+- Click Generate Report. ZAP will create the report file in the selected format and save it to the chosen location.
 
 - ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
 
