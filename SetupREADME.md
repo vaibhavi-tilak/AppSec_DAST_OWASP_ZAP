@@ -51,17 +51,17 @@ docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 4. Open your browser and go to: http://localhost:3000  
 
 
-### Installation OWASP ZAP 
+# Installation OWASP ZAP 
 
-# Pull the OWASP ZAP image
+### Pull the OWASP ZAP image
 ```
 docker pull zaproxy/zap-stable:latest
 ```
-# Run OWASP ZAP
+### Run OWASP ZAP
 ```
 docker run --rm -it zaproxy/zap-stable:latest
 ```
-# Run 
+### Run 
 ```
 docker run -u zap -p 8080:8080 -p 8090:8090 -i ghcr.io/zaproxy/zaproxy:stable zap-webswing.sh
 ```
