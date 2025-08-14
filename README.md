@@ -213,14 +213,13 @@ CSRF can be prevented by implementing:
 7. Optionally include or exclude sections of the report depending on the template.
 8. Click Generate Report. ZAP will create the report file in the selected format and save it to the chosen location.
 
-- ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
+-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
 
--The PDF File
-![image_alt]()https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png
+-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png)
 
 Reports:
-Passive Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Passive%20Scan%20-%20Manual%20JuiceShop%20Report.pdf
-Active Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Active%20Scan%20-%20Automated%20Scan%20JuiceShop.pdf
+-Passive Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Passive%20Scan%20-%20Manual%20JuiceShop%20Report.pdf
+-Active Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Active%20Scan%20-%20Automated%20Scan%20JuiceShop.pdf
 
 ## Disclaimer
 This project is for **educational and authorized testing purposes only**.  
