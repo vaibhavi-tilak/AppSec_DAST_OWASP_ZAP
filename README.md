@@ -15,7 +15,7 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 - Leverage **automated testing workflows**
 - Generate downloadable scan reports and link to them
 
-## Tools & Setup: 
+### Tools & Setup: 
 https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/SetupREADME.md
 
 > **Note:** Run OWASP Juice Shop **locally** (via Node.js or Docker) for testing purposes.  
