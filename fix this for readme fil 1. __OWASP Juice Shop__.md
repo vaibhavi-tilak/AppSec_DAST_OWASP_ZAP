@@ -1,11 +1,6 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
-# fix this for readme fil 1. **OWASP Juice Shop**
-
-- A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10
-Form Sources-
 - 1.	Install node.js
-2.	2.	Run git clone [https://github.com/juice-shop/juice-shop.git](https://github.com/juice-shop/juice-shop.git) --depth 1 (or clone your own fork of the repository)
+- 2.		Run git clone [https://github.com/juice-shop/juice-shop.git](https://github.com/juice-shop/juice-shop.git) --depth 1 (or clone your own fork of the repository)
 -3.	Go into the cloned folder with cd juice-shop
 -4.	Run npm install (only has to be done before first start or when you change the source code)
 -5.	Run npm start
@@ -16,10 +11,8 @@ Docker Container-
 -3.	docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 -4.	Browse to http://localhost:3000 (on macOS and Windows browse to [http://192.168.99.100:3000](http://192.168.99.100:3000) if you are using docker-machine instead of the native docker installation)'
 
-Got it — you want me to clean this up so it’s **README‑friendly**, well‑formatted, and easy to follow.
-Here’s the fixed and properly formatted section for your README.md:
 
-```markdown
+
 1. **OWASP Juice Shop**
    - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular.  
      It intentionally includes vulnerabilities from the **OWASP Top 10**.
@@ -34,7 +27,7 @@ Here’s the fixed and properly formatted section for your README.md:
 git clone https://github.com/juice-shop/juice-shop.git --depth 1
 
 ```
-3. Navigate into the cloned folder:
+4. Navigate into the cloned folder:
 ```
 
 cd juice-shop
@@ -73,10 +66,10 @@ docker pull bkimminich/juice-shop
 docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 
 ```
+
 4. Open your browser and go to:
 - **Linux/macOS (native Docker)**: http://localhost:3000  
 - **macOS/Windows (Docker Machine)**: http://192.168.99.100:3000
-```
 
 
 ### Changes I made
