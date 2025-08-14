@@ -48,7 +48,7 @@ Navigate to: ```Tools--> AJAX Spider```
   - Identifies issues like missing headers, information leakage, etc.
   
   Navigate to:  ```Manual Explore```
-  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/1)
+  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/4.%20Passive.png)
   
   ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/4.1%20Passive%20Scan%20Rules.png)
   
