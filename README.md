@@ -217,9 +217,11 @@ CSRF can be prevented by implementing:
 
 -![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png)
 
-Reports:
--Passive Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Passive%20Scan%20-%20Manual%20JuiceShop%20Report.pdf
--Active Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Active%20Scan%20-%20Automated%20Scan%20JuiceShop.pdf
+- Reports:
+
+- Passive Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Passive%20Scan%20-%20Manual%20JuiceShop%20Report.pdf
+
+- Active Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Active%20Scan%20-%20Automated%20Scan%20JuiceShop.pdf
 
 ## Disclaimer
 This project is for **educational and authorized testing purposes only**.  
