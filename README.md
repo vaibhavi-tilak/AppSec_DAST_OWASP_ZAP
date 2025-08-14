@@ -204,23 +204,23 @@ CSRF can be prevented by implementing:
 
 
 ## 4. Reports
-- In the ZAP main menu, go to Report → Generate Report… or click the "Generate Report" toolbar button.
-
-- In the Generate Report dialog, configure the report options: Enter a title for the report.
-
-- Choose the filename and directory for saving the report.
-- Optionally, select specific contexts or sites to include in the report.
-- Choose a template for the report format such as HTML, MD, PDF, JSON, or XML.
-- Use filters to include alerts based on risk level and confidence.
-- Optionally include or exclude sections of the report depending on the template.
-- Click Generate Report. ZAP will create the report file in the selected format and save it to the chosen location.
+1. In the ZAP main menu, go to Report → Generate Report… or click the "Generate Report" toolbar button.
+2. In the Generate Report dialog, configure the report options: Enter a title for the report.
+3. Choose the filename and directory for saving the report.
+4. Optionally, select specific contexts or sites to include in the report.
+5. Choose a template for the report format such as HTML, MD, PDF, JSON, or XML.
+6. Use filters to include alerts based on risk level and confidence.
+7. Optionally include or exclude sections of the report depending on the template.
+8. Click Generate Report. ZAP will create the report file in the selected format and save it to the chosen location.
 
 - ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
 
 -The PDF File
 ![image_alt]()https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png
 
-
+Reports:
+Passive Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Passive%20Scan%20-%20Manual%20JuiceShop%20Report.pdf
+Active Scan: https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Active%20Scan%20-%20Automated%20Scan%20JuiceShop.pdf
 
 ## Disclaimer
 This project is for **educational and authorized testing purposes only**.  
