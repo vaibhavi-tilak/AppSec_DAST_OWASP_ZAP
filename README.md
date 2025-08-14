@@ -38,13 +38,19 @@ Navigate to: ```Tools--> AJAX Spider```
 
 ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/2.%20AJAX%20Spider.png)
 
-### 2. Scanning
+
+- Apart from this we can use following types of scans
+  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/3.%20Types%20of%20Attacks.png)
+  
+## 2. Scanning
 - **Passive Scanning**  
   - Listens and analyzes HTTP traffic without sending malicious payloads.
   - Identifies issues like missing headers, information leakage, etc.
   
-  Navigate to: ```Manual Explore```
-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/4.1%20Passive%20Scan%20Rules.png)
+  Navigate to:  ```Manual Explore```
+  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/1)
+  
+  ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/4.1%20Passive%20Scan%20Rules.png)
   
 - **Active Scanning**  
   - Sends crafted malicious requests to identify deeper vulnerabilities.
@@ -53,6 +59,33 @@ Navigate to: ```Tools--> AJAX Spider```
     Navigate to: ```Automate Explore```
     
     ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/6.1%20Active%20Scan%20-%20Automated%20Scan.png)
+
+### Scan Policy Manager:
+
+- The Scan Policy Manager in OWASP ZAP is a powerful feature that allows you to customize how active scans are performed by managing scanning rules and their behavior. Three key configurable settings in the Scan Policy Manager are Threshold, Strength, and Status.
+- ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/7.%20Scan%20Policy%20Manager.png)
+
+-a. Threshold : Threshold controls how likely ZAP is to report potential vulnerabilities during a scan. It determines the sensitivity level of the scan rules.
+-Possible Threshold values:
+- Off: The scan rule is disabled and won't run.
+- Low: More potential issues are flagged, increasing the chances of false positives.
+- Medium (default): Balanced level to flag likely issues.
+- High: Fewer issues are flagged, reducing false positives but may miss some vulnerabilities.
+
+-b. Strength : Strength controls the intensity and number of attack requests ZAP sends for each scanning rule.It determines how thorough the scan is in attacking the target.
+- Possible Strength values:
+- Low: Fewer attacks, quicker scan, but may miss issues.
+- Medium (default): Balanced attack intensity.
+- High: More attacks, finds more issues but slower scan.
+- Insane: Maximum attack intensity, used for small areas like login pages, very thorough but takes a long time.
+
+-c. What is Status in Scan Policy Manager?
+- Status determines if a scan rule is enabled or disabled.
+- Common statuses used in ZAP include:
+- Release: Stable and fully enabled scan rules.
+- Beta or Alpha: Experimental or less stable rules that can be optionally enabled.
+
+    ![imagage_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/7.2%20Scan%20Policy.png)
 
 ## 3. Vulnerabilities Tested
 
