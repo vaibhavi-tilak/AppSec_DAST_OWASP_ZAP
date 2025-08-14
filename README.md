@@ -43,20 +43,32 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 
 ### 1. Spidering
 - **Traditional Spider**: Crawls through hyperlinks to map site structure.
+  
 Navigate to:  ```Tools--> Spider```
+
   ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/2.1%20Spider.png)
 
 - **AJAX Spider**: Handles JavaScript-heavy or single-page applications by discovering dynamically loaded content via AJAX calls.
+  
 Navigate to: ```Tools--> AJAX Spider```
+
 ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/2.%20AJAX%20Spider.png)
 
 ### 2. Scanning
 - **Passive Scanning**  
   - Listens and analyzes HTTP traffic without sending malicious payloads.
   - Identifies issues like missing headers, information leakage, etc.
+  
+  Navigate to: ```Manual Explore```
+![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/4.1%20Passive%20Scan%20Rules.png)
+  
 - **Active Scanning**  
   - Sends crafted malicious requests to identify deeper vulnerabilities.
   - Should be run **only** in a safe, test environment (like a local Juice Shop instance).
+    
+    Navigate to: ```Automate Explore```
+    
+    ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/4.1%20Passive%20Scan%20Rules.png)
 
 ## 3. Vulnerabilities Tested
 
