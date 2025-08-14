@@ -28,6 +28,7 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 
 ### 1. Spidering
 - **Traditional Spider**: Crawls through hyperlinks to map site structure.
+  
 - **AJAX Spider**: Handles JavaScript-heavy or single-page applications by discovering dynamically loaded content via AJAX calls.
 
 ### 2. Scanning
