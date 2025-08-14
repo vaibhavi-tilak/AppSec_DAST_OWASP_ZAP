@@ -53,13 +53,17 @@ docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
 
 ### Installation OWASP ZAP 
 
-# Pull the Juice Shop Docker image
+# Pull the OWASP ZAP image
 ```
-docker pull bkimminich/juice-shop
+docker pull zaproxy/zap-stable:latest
 ```
-# Run Juice Shop in a container
+# Run OWASP ZAP
 ```
-docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+docker run --rm -it zaproxy/zap-stable:latest
+```
+# Run 
+```
+docker run -u zap -p 8080:8080 -p 8090:8090 -i ghcr.io/zaproxy/zaproxy:stable zap-webswing.sh
 ```
 
 ### Download FoxyProxy Chrome extension: https://chromewebstore.google.com/detail/foxyproxy/gcknhkkoolaabfmlnjonogaaifnjlfnp?hl=en
