@@ -18,17 +18,32 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 ## Tools & Setup
 
 1. **OWASP Juice Shop**
-   - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10 
-2. **OWASP ZAP (Zed Attack Proxy)**
+   - A modern, JavaScript-heavy insecure web application built with Node.js, Express, and Angular. It intentionally includes vulnerabilities from the OWASP Top 10
+     Form Sources- 
+          1.	Install node.js
+          2.	Run git clone https://github.com/juice-shop/juice-shop.git --depth 1 (or clone your own fork of the repository)
+          3.	Go into the cloned folder with cd juice-shop
+          4.	Run npm install (only has to be done before first start or when you change the source code)
+          5.	Run npm start
+          6.	Browse to http://localhost:3000
+
+    Docker Container- 
+          1.	Install Docker
+          2.	docker pull bkimminich/juice-shop
+          3.	docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop
+          4.	Browse to http://localhost:3000 (on macOS and Windows browse to http://192.168.99.100:3000 if you are using docker-machine instead of the native docker installation)
+   
+3. **OWASP ZAP (Zed Attack Proxy)**
    - An open-source, flagship OWASP DAST tool with intercepting proxy, traditional + AJAX spiders, passive and active scanning, scripting, and reporting capabilities
-3. **Environment**
+     
+4. **Environment**
    - Run Juice Shop locally (via Docker or Node.js) and point ZAP at the target URL (e.g., `http://localhost:3000`) 
 
 ## Testing Methodology
 
 ### 1. Spidering
 - **Traditional Spider**: Crawls through hyperlinks to map site structure.
-  
+  ![image_alt]()
 - **AJAX Spider**: Handles JavaScript-heavy or single-page applications by discovering dynamically loaded content via AJAX calls.
 
 ### 2. Scanning
