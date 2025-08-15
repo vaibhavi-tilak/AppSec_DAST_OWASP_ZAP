@@ -7,7 +7,7 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 ### Objectives
 - Explore web crawling techniques: **traditional spidering** and **AJAX crawling**
 - Perform **passive scanning** as well as **active vulnerability scanning**
-- 
+- Scan Policy Manager
 - Identify key vulnerabilities including:
     - **Broken access control**
 - Generate downloadable scan reports and link to them
