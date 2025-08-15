@@ -125,7 +125,7 @@ Servers must **never trust client-supplied role or permission data**. Always enf
 7. Optionally include or exclude sections of the report depending on the template.
 8. Click Generate Report. ZAP will create the report file in the selected format and save it to the chosen location.
 
--![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.%20Report%20Generation.png)
+-![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.png)
 
 -![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/5.1%20Report%20Generation.png)
 
