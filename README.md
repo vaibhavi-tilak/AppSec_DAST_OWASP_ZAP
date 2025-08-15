@@ -58,7 +58,7 @@ Navigate to: ```Tools--> AJAX Spider```
     
     Navigate to: ```Automate Explore```
     
-    ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/6.1%20Active%20Scan%20-%20Automated%20Scan.png)
+    ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/3.1%20Attack%20Options.png)
 
 ### Scan Policy Manager:
 
