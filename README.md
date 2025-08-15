@@ -7,12 +7,9 @@ This project demonstrates a **Comprehensive Web Application Security Assessment*
 ### Objectives
 - Explore web crawling techniques: **traditional spidering** and **AJAX crawling**
 - Perform **passive scanning** as well as **active vulnerability scanning**
+- 
 - Identify key vulnerabilities including:
-  - **SQL Injection**
-  - **Cross-Site Scripting** (Reflected, Stored, DOM)
-  - **Authentication bypass**
-  - **Broken access control**
-- Leverage **automated testing workflows**
+    - **Broken access control**
 - Generate downloadable scan reports and link to them
 
 ### Tools & Setup: 
@@ -60,7 +57,7 @@ Navigate to: ```Tools--> AJAX Spider```
     
     ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/3.1%20Attack%20Options.png)
 
-### Scan Policy Manager:
+## 3 Scan Policy Manager:
 
 - The Scan Policy Manager in OWASP ZAP is a powerful feature that allows you to customize how active scans are performed by managing scanning rules and their behavior. Three key configurable settings in the Scan Policy Manager are Threshold, Strength, and Status.
 - ![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/7.%20Scan%20Policy%20Manager.png)
@@ -87,14 +84,14 @@ Navigate to: ```Tools--> AJAX Spider```
 
     ![imagage_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/7.2%20Scan%20Policy.png)
 
-## 3. Additional Manual Vulnerabilities Tested
+## 4. Additional Manual Vulnerabilities Tested
 
 In this project, we conducted comprehensive security testing to identify various vulnerabilities within the application. Each identified vulnerability has been carefully mapped to the corresponding OWASP Top 10 category. For every vulnerability, we have detailed the technical cause explaining how the issue arises, classified it under the appropriate category, and outlined mitigation strategies based on the official OWASP guidelines. This structured approach ensures a clear understanding of the risks and provides actionable recommendations to enhance the application's security posture effectively.
 
 https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Juice%20Shop%20Vulnerabilities.xlsx
 
 
-### 3a. Broken Access Control
+### 4a. Broken Access Control
 **Definition:**  
 Broken Access Control occurs when applications fail to enforce permissions properly, allowing unauthorized users to access restricted data or functions.
 
@@ -115,98 +112,10 @@ Broken Access Control occurs when applications fail to enforce permissions prope
 Servers must **never trust client-supplied role or permission data**. Always enforce role-based access control at the server side.
 
 ---
-### 3b. Directory Traversal
-**Definition:**  
-A Directory Traversal vulnerability allows attackers to read files outside the intended directory by manipulating request file paths using patterns like `../`.
-
-Plain Explanation:
-This is when a hacker tricks a website into giving them files they’re not supposed to see by sneaking into hidden folders.
-It’s like finding a secret hallway in a hotel that leads you to the manager’s office instead of your guest room.
-
-Example in Real Life:
-You rent a storage locker, but instead of opening only your own, you figure out a way to open other people’s lockers too.
-
-Example in Web Apps:
-A site lets you download your invoice:
-
-https://example.com/download?file=my_invoice.pdf
-
-
-A hacker changes it to:
-
-https://example.com/download?file=../../passwords.txt
-
-
-The ../../ means “go up two folders” — now the server gives them sensitive files from outside the normal folder.
-**Steps Taken:**  
-1. Navigated to the **Photo Wall** feature and inspected the **file download requests** in the browser developer tools.  
-2. Observed that the file path was passed as a parameter in the request.  
-3. Modified the path parameter to include directory traversal sequences (`../`) to move up the file system hierarchy.  
-4. Requested sensitive files such as server configuration data.  
-
-**Result:**  
-- Successfully retrieved sensitive files stored outside the web root.  
-- Confirmed the application did not sanitize file path input properly.
-
-**Key Takeaway:**  
-Applications must sanitize and validate file paths and **disallow traversal sequences** to prevent unauthorized file disclosure.
-
-
-### 3c. Cross-Site Request Forgery (CSRF)
-
-**Definition:**  
-CSRF forces an authenticated user to unintentionally execute actions on a web application in which they are logged in.
-Plain Explanation:
-This happens when a system fails to check whether someone is allowed to do something.
-It’s like a security guard letting anyone into the VIP lounge without checking if they have the right badge.
-
-Example in Real Life:
-Imagine a cinema where you buy a ticket for a normal seat, but the doors to the premium seats aren’t locked. You simply walk in and sit there — no one stops you.
-
-Example in Web Apps:
-A normal user’s account shouldn’t let them see admin pages. But if the website doesn’t check permissions properly, they could just type:
-
-https://example.com/admin
-
-
-…and get in without being an admin.
-Plain Explanation:
-This is when a hacker tricks you into doing something on a site you’re logged into — without you realizing it.
-It’s like a con artist giving you a form to sign, telling you it’s a petition, but in reality, it’s a cheque from your bank account.
-
-Example in Real Life:
-You’re logged into your online banking on one tab. On another tab, you visit a funny meme site. The meme site secretly sends a request to your bank to transfer money — and since you’re already logged in, the bank thinks you made the request.
-
-Example in Web Apps:
-If you’re logged into shopping.com and you click on a malicious link:
-
-http://shopping.com/change_email?email=hacker@example.com
-
-
-…the site updates your email address without asking, because it trusted your browser.
-
-**Steps Taken:**  
-1. Logged into Juice Shop with a standard user account.  
-2. Identified the `POST /profile` request responsible for updating the display name.  
-3. Crafted a **malicious HTML page** containing a form that auto-submitted a request to change the display name.  
-4. Hosted the page locally using:
-   ```python3 -m http.server 8081```
-
-6. While logged in to Juice Shop, visited the malicious page in another browser tab.  
-
-**Result:**  
-- The browser automatically sent the authenticated request, changing the profile name to `HackedByCSRF`.  
-
-**Key Takeaway:**  
-CSRF can be prevented by implementing:
-- Anti-CSRF tokens
-- SameSite cookie attributes
-- Double-submit cookie patterns
 
 
 
-
-## 4. Reports
+## 5. Reports
 1. In the ZAP main menu, go to Report → Generate Report… or click the "Generate Report" toolbar button.
 2. In the Generate Report dialog, configure the report options: Enter a title for the report.
 3. Choose the filename and directory for saving the report.
