@@ -94,7 +94,7 @@ In this project, we conducted comprehensive security testing to identify various
 https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Juice%20Shop%20Vulnerabilities.xlsx
 
 
-### 3d. Broken Access Control
+### 3a. Broken Access Control
 **Definition:**  
 Broken Access Control occurs when applications fail to enforce permissions properly, allowing unauthorized users to access restricted data or functions.
 
@@ -112,7 +112,7 @@ Broken Access Control occurs when applications fail to enforce permissions prope
 Servers must **never trust client-supplied role or permission data**. Always enforce role-based access control at the server side.
 
 ---
-### 3f. Directory Traversal
+### 3b. Directory Traversal
 **Definition:**  
 A Directory Traversal vulnerability allows attackers to read files outside the intended directory by manipulating request file paths using patterns like `../`.
 
@@ -149,7 +149,7 @@ The ../../ means “go up two folders” — now the server gives them sensitive
 Applications must sanitize and validate file paths and **disallow traversal sequences** to prevent unauthorized file disclosure.
 
 
-### 3. Cross-Site Request Forgery (CSRF)
+### 3c. Cross-Site Request Forgery (CSRF)
 
 **Definition:**  
 CSRF forces an authenticated user to unintentionally execute actions on a web application in which they are logged in.
