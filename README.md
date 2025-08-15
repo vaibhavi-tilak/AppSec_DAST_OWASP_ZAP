@@ -101,8 +101,11 @@ Broken Access Control occurs when applications fail to enforce permissions prope
 **Steps Taken:**  
 1. Created a regular user account in Juice Shop.  
 2. Configured OWASP ZAP as an intercepting proxy to capture HTTP requests.  
-3. Intercepted the registration request containing a JSON body with `"role": "customer"`.  
-4. Modified the `"role"` parameter to `"admin"` before forwarding the request.  
+3. Intercepted the registration request containing a JSON body with `"role": "customer"`. Right Click on the request-> Open/Resend with Request Editor->
+4. Add "role":"admin" and modify email address.
+
+![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/Manual%20Request%20Editor-%20Role%20email%20change.png)
+![image_alt](https://github.com/vaibhavi-tilak/AppSec_DAST_OWASP_ZAP/blob/main/1/BOLA%20Success.png)
 
 **Result:**  
 - The server accepted the modified request without validation.  
